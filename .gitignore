@@ -12,3 +12,7 @@ docker/*.log
 # Ignore source code files
 src/*
 **/src/*
+
+# Ignore build files
+docker/mysql/*
+docker/logs/*
