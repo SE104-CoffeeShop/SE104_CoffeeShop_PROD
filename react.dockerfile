@@ -8,7 +8,7 @@ WORKDIR /app
 COPY src/SE104_CoffeeShop_FE/package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm install
 
 # Copy the rest of the application code
 COPY src/SE104_CoffeeShop_FE ./

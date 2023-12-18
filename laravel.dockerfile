@@ -27,13 +27,16 @@ RUN composer install --ignore-platform-reqs --no-scripts
 
 # Copy the rest of the application code
 COPY src/SE104_CoffeeShop_BE ./
+
+RUN chmod -R 777 storage bootstrap/cache public
 RUN php artisan cache:clear
 # Generate the application key
 RUN php artisan key:generate --ansi
 
 # Run database migrations
-RUN php artisan migrate:fresh
-RUN php artisan migrate --seed
+# RUN php artisan migrate:fresh
+# RUN php artisan migrate
+# RUN php artisan db:seed
 
 # Expose port 8000
 EXPOSE 8000
