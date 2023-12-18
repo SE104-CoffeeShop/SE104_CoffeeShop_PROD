@@ -12,6 +12,7 @@ npm i -D
 
 # Run the build
 echo "Running build..."
+npm run format
 npm run build
 
 # Run the server
