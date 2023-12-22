@@ -57,4 +57,4 @@ echo "Cloning source code BE ..."
 git clone https://github.com/SE104-CoffeeShop/SE104_CoffeeShop_BE.git ./src/SE104_CoffeeShop_BE
 
 # Start docker-compose
-docker-compose up -d --build
+docker compose up -d
